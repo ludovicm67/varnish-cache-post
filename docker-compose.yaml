@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  varnish:
+    build: ./varnish
+    ports:
+      - 8080:80
+
+  date:
+    build: ./date
